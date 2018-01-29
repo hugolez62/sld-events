@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
   <title>SLD event's</title>
 
   <link rel="stylesheet" href="style.css">
@@ -13,48 +14,30 @@
 
 <body>
 
-  <header>
-    <div class="navbar row">
-      <ul class="nav col-md-9">
-        <li class="item">
-          <a href="#">Accueil</a>
-        </li>
+  <header id="wrapper">
+    <nav role="navigation" id="access">
 
-        <li class="item">
-          <a href="#">Présentation</a>
-        </li>
-
-        <li class="item">
-          <a href="#">Galerie</a>
-        </li>
-
-        <li class="item">
-          <a href="#">La Team</a>
-        </li>
-
-        <li class="item">
-          <a href="#" class="contact">Contact</a>
-        </li>
+      <a class="skip-link" title="Accéder au menu" href="#menu">Menu</a>
+      <ul id="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html">Présentation</a></li>
+        <li><a href="index.html">L'équipe</a></li>
+        <li><a href="index.html">Galerie</a></li>
+        <li><a href="index.html">Contact</a></li>
       </ul>
-
-      <div class="logo col-md-3">
-        <img src="./img/logo.png">
-      </div>
-    </div>
+    </nav>
   </header>
 
-  <div class="banniere row">
-    <div class="banniere-gauche col-md-6">
+  <div id="ban">
+
+    <img src="./img/ban.png" />
+    <div id="ban-dessus">
       <h1>SLD event's</h1>
-      <hr size="1" color="white">
-      <h3>
-        L'évenemtielle sur mesure !<br/>
-        L'animation sans fausses notes !<br/>
-        Une équipe à votre écoute !<br/>
-      </h3>
-
+      <hr />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis est in interdum rutrum. Donec id suscipit nulla. Pellentesque ullamcorper diam eu odio accumsan ornare. Donec pulvinar finibus hendrerit. Nam scelerisque mi et augue ultrices pretium. Morbi quis orci magna. Praesent eu viverra eros, id sollicitudin eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam lobortis ante ac bibendum semper. Vivamus hendrerit dictum nibh, sed placerat ante rhoncus gravida.
+      </p>
     </div>
-
   </div>
 
   <script src="jquery.js"></script>
