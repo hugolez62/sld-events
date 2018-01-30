@@ -2,46 +2,92 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width" />
-  <title>SLD event's</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>SLD event's</title>
 
-  <link rel="stylesheet" href="style.css">
-  <link href="boostrap.css" />
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="boostrap.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css'>
+
+
 
 </head>
 
 <body>
-
-  <header id="wrapper">
-    <nav role="navigation" id="access">
-
-      <a class="skip-link" title="Accéder au menu" href="#menu">Menu</a>
-      <ul id="menu">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="index.html">Présentation</a></li>
-        <li><a href="index.html">L'équipe</a></li>
-        <li><a href="index.html">Galerie</a></li>
-        <li><a href="index.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <div id="ban">
-
-    <img src="./img/ban.png" />
-    <div id="ban-dessus">
-      <h1>SLD event's</h1>
-      <hr />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis est in interdum rutrum. Donec id suscipit nulla. Pellentesque ullamcorper diam eu odio accumsan ornare. Donec pulvinar finibus hendrerit. Nam scelerisque mi et augue ultrices pretium. Morbi quis orci magna. Praesent eu viverra eros, id sollicitudin eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam lobortis ante ac bibendum semper. Vivamus hendrerit dictum nibh, sed placerat ante rhoncus gravida.
-      </p>
+    <div id="logo-menu">
+        <img src="./img/logo.png" />
     </div>
-  </div>
+    <header id="wrapper">
 
-  <script src="jquery.js"></script>
-  <script src="script.js"></script>
+        <nav role="navigation" id="access">
+
+            <a class="skip-link icon-reorder" title="Accéder au menu" href="#menu">Menu</a>
+            <ul id="menu">
+                <li id="li-img">
+                    <div id="logo-nav">
+                        <img src="./img/logo.png" />
+                    </div>
+                </li>
+                <li><a class="icon-home" href="index.html">Accueil</a></li>
+                <li><a class="icon-leaf" href="presentation.html">Présentation</a></li>
+                <li><a class="icon-picture" href="equipe.html">L'équipe</a></li>
+                <li><a class="icon-envelope-alt" href="galerie.html">Galerie</a></li>
+                <li><a class="icon-envelope-alt" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+            <div class="active item">
+                <h1>Rétrospective 2k17</h1>
+                <div class="sub-main">
+                    <a href="vimeo.html"><button class="button-two"><span>Découvrir</span></button></a>
+                </div>
+
+            </div>
+
+            <div class="item">
+                <h1>Rétrospective 2k17</h1>
+                <div class="sub-main">
+                    <a href="vimeo.html"><button class="button-two"><span>Découvrir</span></button></a>
+                </div>
+            </div>
+
+            <div class="item">
+                <h1>Rétrospective 2k17</h1>
+                <div class="sub-main">
+                    <a href="vimeo.html"><button class="button-two"><span>Découvrir</span></button></a>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel nav -->
+        <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.js'></script>
+    <script type="text/javascript" src="jquery.sticky.js"></script>
+    <script>
+        $(window).load(function() {
+            $("#access").sticky({
+                topSpacing: 0
+            });
+        });
+    </script>
 
 
 

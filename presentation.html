@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>SLD event's - Présentation</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="boostrap.css" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+  <div id="logo-menu">
+    <img src="./img/logo.png" />
+  </div>
+  <header id="wrapper">
+    <nav role="navigation" id="access">
+
+      <a class="skip-link icon-reorder" title="Accéder au menu" href="#menu">Menu</a>
+      <ul id="menu">
+        <li><a class="icon-home" href="index.html">Accueil</a></li>
+        <li><a class="icon-leaf" href="presentation.html">Présentation</a></li>
+        <li><a class="icon-picture" href="equipe.html">L'équipe</a></li>
+        <li><a class="icon-envelope-alt" href="galerie.html">Galerie</a></li>
+        <li><a class="icon-envelope-alt" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+
+  <script src="jquery.js"></script>
+  <script src="script.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.sticky.js"></script>
+  <script>
+    $(window).load(function(){
+      $("#access").sticky({ topSpacing: 0 });
+    });
+  </script>
+
+
+
+
+  </body>
+
+  </html>
